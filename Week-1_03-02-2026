@@ -1,0 +1,177 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPRQn+w7bOn0FCxhLTDoOtI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Azraumaimah/2025-2026-even-AI-B_DS_Azra-Umaimah_4068/blob/main/Week-1_03-02-2026\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6ug25bIJ0y_f",
+        "outputId": "0287e8d4-53c7-4d16-9f85-f171dbaf56ee"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'banana', 'cherry']\n",
+            "['apple', 'mango', 'banana', 'cherry', 'orange']\n",
+            "['apple', 'mango', 'cherry', 'orange']\n",
+            "apple\n",
+            "Total fruits: 4\n"
+          ]
+        }
+      ],
+      "source": [
+        "#implementation of list\n",
+        "fruits=[\"apple\",\"banana\",\"cherry\"]\n",
+        "print(fruits)\n",
+        "fruits.append(\"orange\")\n",
+        "fruits.insert(1,\"mango\")\n",
+        "print(fruits)\n",
+        "fruits.remove(\"banana\")\n",
+        "print(fruits)\n",
+        "print(fruits[0])\n",
+        "print(\"Total fruits:\",len(fruits))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#implementation of tuples\n",
+        "fruits=(\"apple\",\"banana\",\"cherry\",1,5)\n",
+        "print(fruits)\n",
+        "print(fruits[0])\n",
+        "print(fruits[2])\n",
+        "print(fruits[-1])\n",
+        "print(\"Total fruits:\",len(fruits))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2qM1J0731qMN",
+        "outputId": "b9e3f287-e32d-44f2-c509-e58632873775"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('apple', 'banana', 'cherry', 1, 5)\n",
+            "apple\n",
+            "cherry\n",
+            "5\n",
+            "Total fruits: 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#implementation of sets\n",
+        "fruits={\"apple\",\"banana\",\"cherry\"}\n",
+        "print(fruits)\n",
+        "fruits.add(\"orange\")\n",
+        "fruits.update([\"mango\",\"grapes\"])\n",
+        "fruits.remove(\"banana\")\n",
+        "print(fruits)\n",
+        "print(\"Total fruits:\", len(fruits))\n",
+        "set1={1,2,3,4,5}\n",
+        "set2={4,5,6,7,8}\n",
+        "#union\n",
+        "print(\"Union:\",set1|set2)\n",
+        "#intersection\n",
+        "print(\"Intersection:\",set1&set2)\n",
+        "#difference\n",
+        "print(\"Difference:\",set1-set2)\n",
+        "#symmetric difference\n",
+        "print(\"Symmetric Difference:\",set1^set2)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "glbZWDEC4dQ4",
+        "outputId": "f6d46313-cc6e-4496-fa0d-7a5c7502712e"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'banana', 'cherry', 'apple'}\n",
+            "{'apple', 'mango', 'cherry', 'grapes', 'orange'}\n",
+            "Total fruits: 5\n",
+            "Union: {1, 2, 3, 4, 5, 6, 7, 8}\n",
+            "Intersection: {4, 5}\n",
+            "Difference: {1, 2, 3}\n",
+            "Symmetric Difference: {1, 2, 3, 6, 7, 8}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#implementation of dictionaries\n",
+        "student={\"Name\":\"Sara\",\"RollNo\":42,\"Course\":\"DS\"}\n",
+        "print(\"Dictionary items:\")\n",
+        "for key,value in student.items():\n",
+        "  print(key,\":\",value)\n",
+        "print(\"Total keys:\",len(student))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vwrVi2TW5pIn",
+        "outputId": "1147a15e-e835-49b9-98dc-f62f1221d7b1"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dictionary items:\n",
+            "Name : Sara\n",
+            "RollNo : 42\n",
+            "Course : DS\n",
+            "Total keys: 3\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
